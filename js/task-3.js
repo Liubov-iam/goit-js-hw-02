@@ -7,13 +7,13 @@ function checkForSpam(message) {
     const banWord2 = "sale";
     const res1 = message.toLowerCase().includes(banWord1);
     const res2 = message.toLowerCase().includes(banWord2);
-const checkForSpam = res1 || res2;
+const result = res1 || res2;
     if (res1 || res2) {
-        return `true`
+        return true;
     } else {
-        return `false`
+        return false;
     }
-    console.log(checkForSpam);
+    console.log(result);
 }
 
 
